@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light_Grey: hsl(217, 12%, 63%);
+    --Medium_Grey: hsl(216, 12%, 54%);
+    --Medium_Grey_Op: hsl(216, 12%, 54%, 0.15);
+    --Dark_Blue: hsl(213, 19%, 18%);
+    --Very_Dark_Blue: hsl(216, 12%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    background-color: var(--Very_Dark_Blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 0.1px);
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    background: radial-gradient(circle at top, rgb(47, 57, 70), rgb(22, 27, 32));
+    max-width: 450px;
+    height: 450px;
+    border-radius: 1.5rem;
+    padding: 2rem;
+}
+
+.star {
+    width: 50px;
+    height: 50px;
+    background-color: var(--Medium_Grey_Op);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.star img {
+    width: 20px;
+}
+
+.container:first-child h1 {
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--White);
+}
+
+.container:first-child p {
+    color: var(--Medium_Grey);
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 1.5rem 0;
+}
+
+.btnRadio {
+    display: flex;
+    justify-content: space-between;    
+}
+
+.btnRadio input[type=radio] {
+    display: none;
+}
+
+.btnRadio input[type=radio]:checked + label {
+    background-color: var(--Orange);
+    color: var(--White);
+    transition: 0.2s ease-in-out;
+}
+
+.circle-option {
+    background-color: var(--Medium_Grey_Op);
+    width: 60px;
+    height: 60px;
+    font-weight: 700;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Light_Grey);
+    margin: 0 0 2rem 0;
+    cursor: pointer;
+}
+.circle-option:hover {
+    background-color: var(--Light_Grey);
+    color: var(--White);
+    transition: 0.2s;
+}
+
+.btnSubmit {
+    width: 100%;
+    height: 2.8rem;
+    border: none;
+    background-color: var(--Orange);
+    color: var(--White);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.btnSubmit:hover {
+    color: var(--Orange);
+    background-color: var(--White);
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
+
+.smallText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 2rem;
+    border-radius: 2rem;
+    background-color: var(--Medium_Grey_Op);
+}
+
+.smallText h2{
+    color: var(--Orange);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container:nth-child(2) h1{
+    color: var(--White);
+    text-align: center;
+}
+
+.container:nth-child(2) p {
+    color: var(--Medium_Grey);
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.btnReturn {
+    width: 100%;
+    height: 2.8rem;
+    border: none;
+    background-color: var(--Orange);
+    color: var(--White);
+    font-size: 16px;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.btnReturn:hover {
+    color: var(--Orange);
+    background-color: var(--White);
+}
+
+.attribution {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--White);
+}
+
+.attribution a {
+    color: var(--Orange);
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./Images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Interactive Rating</title>
+</head>
+
+<body>
+    <div class="card1 container">
+        <div class="star">
+            <img src="./Images/icon-star.svg" alt="icon-star">
+        </div>
+        <article>
+            <h1>How did we do?</h1>
+            <p>Please let us know how we did with you support request.
+                All feedback is appreciated to help us improve our offering!
+            </p>
+        </article>
+
+        <div class="btnRadio">
+            <input type="radio" name="radios" id="radio1" value="1">
+            <label for="radio1" class="circle-option">1</label>
+
+            <input type="radio" name="radios" id="radio2" value="2">
+            <label for="radio2" class="circle-option">2</label>
+
+            <input type="radio" name="radios" id="radio3" value="3">
+            <label for="radio3" class="circle-option">3</label>
+
+            <input type="radio" name="radios" id="radio4" value="4">
+            <label for="radio4" class="circle-option">4</label>
+
+            <input type="radio" name="radios" id="radio5" value="5">
+            <label for="radio5" class="circle-option">5</label>
+        </div>
+
+        <input class="btnSubmit" id="submit" type="submit" value="Submit">
+    </div>
+    <div class="container card2 hidden">
+        <div class="flex">
+            <img src="./Images/illustration-thank-you.svg" alt="illustration-thank-you">
+            <div class="smallText">
+                <h2>You selected <span id="rating">1</span> out of 5</h2>
+            </div>
+            <h1>Thank you!</h1>
+            <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get
+                in
+                touch!</p>
+            <input class="btnReturn" id="return" type="button" value="Return home">
+        </div>
+    </div>
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/Luckaas/Luckaas">Lucas Gomes</a>.
+    </div>
+</body>
+
+</html>
